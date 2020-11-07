@@ -1,0 +1,20 @@
+<h3>ngOnChanges</h3>
+
+<!--Открыть консоль для отображения работы ngOnChanges-->
+
+<!--Метод increment родительского компонента увеличивает свойство counter, которое в свою очередь привязано
+к свойству value дочернего компонента. Изменение свойства value в app-sample-item запустит
+событие ngOnChanges-->
+
+<!--Пример 1
+<app-sample-item [value]="counter"></app-sample-item>
+
+<button (click)="increment()">Инкремент</button>-->
+
+<app-sample-item [name]="nameValue" [value]="counter"></app-sample-item>
+
+<button (click)="changeName()">Изменить <strong>name</strong></button>
+<button (click)="changeValue()">Изменить <strong>value</strong></button>
+<button (click)="changeBoth()">Изменить оба свойства</button>
+
+
